@@ -29,17 +29,29 @@
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:backgroundTint="#1D1D1D"
-        android:layout_height="48dp">
-        <com.google.android.material.textfield.TextInputEditText
+        android:backgroundTint="#1D1D1D">
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:background="#1D1D1D"
-            android:id="@+id/username"
-            android:hint="Enter Your Username"
-            android:textColorHint="#535353"
-            android:layout_height="48dp"/>
+            app:boxStrokeWidth="0dp"
+            app:hintEnabled="false"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#1D1D1D"
+                android:hint="Enter Your Username"
+                android:textColorHint="#535353" />
+        </com.google.android.material.textfield.TextInputLayout>
     </com.google.android.material.card.MaterialCardView>
+
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,37 +59,45 @@
         android:layout_marginTop="22dp"
         android:fontFamily="@font/lato"
         android:text="Password"
-        android:textSize="16dp"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:backgroundTint="#1D1D1D"
-        android:layout_height="48dp">
+        android:backgroundTint="#1D1D1D">
 
-
-        <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:background="#1D1D1D"
-            android:hint="Your Password"
-            android:id="@+id/password"
-            android:textColorHint="#535353"
-            android:layout_height="48dp"/>
+            app:boxStrokeWidth="0dp"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#1D1D1D"
+                android:hint="Your Password"
+                android:inputType="textPassword"
+                android:textColorHint="#535353" />
+        </com.google.android.material.textfield.TextInputLayout>
     </com.google.android.material.card.MaterialCardView>
-
-
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_marginTop="68dp"
         android:layout_height="48dp">
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="Login"
-        android:background="@color/primary"
-        android:id="@+id/loginButton" />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Login"
+            android:background="@color/primary"
+            android:id="@+id/loginButton" />
     </com.google.android.material.card.MaterialCardView>
 
 
@@ -95,12 +115,12 @@
         android:layout_width="match_parent"
         android:layout_marginTop="24dp"
         android:layout_height="48dp">
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="signup"
-        android:background="@color/primary"
-        android:id="@+id/signupButton"
-        />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="signup"
+            android:background="@color/primary"
+            android:id="@+id/signupButton"
+            />
     </com.google.android.material.card.MaterialCardView>
 </LinearLayout>
