@@ -9,17 +9,39 @@
         android:id="@+id/splashSreen"
         android:name="com.example.to_do.UI.SplashScreen.SplashSreen"
         android:label="fragment_splash_sreen"
-        tools:layout="@layout/fragment_splash_sreen" />
+        tools:layout="@layout/fragment_splash_sreen" >
+        <action
+            android:id="@+id/action_splashSreen_to_registerScreen"
+            app:destination="@id/registerScreen" />
+        <action
+            android:id="@+id/action_splashSreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
     <fragment
         android:id="@+id/loginScreen"
         android:name="com.example.to_do.UI.LoginScreen.LoginScreen"
         android:label="fragment_login_screen"
-        tools:layout="@layout/fragment_login_screen" />
+        tools:layout="@layout/fragment_login_screen" >
+        <action
+            android:id="@+id/action_loginScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
+        <action
+            android:id="@+id/action_loginScreen_to_registerScreen"
+            app:destination="@id/registerScreen"
+            app:launchSingleTop="false" />
+    </fragment>
     <fragment
         android:id="@+id/registerScreen"
         android:name="com.example.to_do.UI.RegisterScreen.RegisterScreen"
         android:label="fragment_register_screen"
-        tools:layout="@layout/fragment_register_screen" />
+        tools:layout="@layout/fragment_register_screen" >
+        <action
+            android:id="@+id/action_registerScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
+        <action
+            android:id="@+id/action_registerScreen_to_loginScreen"
+            app:destination="@id/loginScreen" />
+    </fragment>
     <fragment
         android:id="@+id/homeScreen"
         android:name="com.example.to_do.UI.HomeScreen.HomeScreen"
