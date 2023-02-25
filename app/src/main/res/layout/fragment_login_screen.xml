@@ -45,8 +45,8 @@
                 android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="#1D1D1D"
                 android:hint="Enter Your Username"
+                android:background="@drawable/rectengale"
                 android:textColorHint="#535353" />
         </com.google.android.material.textfield.TextInputLayout>
     </com.google.android.material.card.MaterialCardView>
@@ -79,9 +79,10 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/password"
+                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="#1D1D1D"
+                android:background="@drawable/rectengale"
                 android:hint="Your Password"
                 android:inputType="textPassword"
                 android:textColorHint="#535353" />

@@ -50,7 +50,7 @@
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#1D1D1D"
+            android:background="@drawable/rectengale"
             android:maxLines="1"
             android:hint="Enter Your Username"
             android:textColorHint="#535353" />
@@ -87,9 +87,8 @@
                 android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="#1D1D1D"
+                android:background="@drawable/rectengale"
                 android:maxLines="1"
-
                 android:hint="Your Password"
                 android:inputType="textPassword"
                 android:textColorHint="#535353" />
@@ -123,7 +122,7 @@
                 android:id="@+id/confirmpassword"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#1D1D1D"
+                android:background="@drawable/rectengale"
                 android:maxLines="1"
                 android:hint="Confirm Password"
                 android:inputType="textPassword"
